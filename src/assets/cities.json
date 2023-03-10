@@ -1,0 +1,18 @@
+[
+    {
+        "city": "ירושלים",
+        "addHours": 0
+    },
+    {
+        "city": "לונדון",
+        "addHours": 3
+    },
+    {
+        "city": "מנהטן",
+        "addHours": 6
+    },
+    {
+        "city": "טוקיו",
+        "addHours": -5
+    }
+]

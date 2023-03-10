@@ -1,0 +1,16 @@
+<div *ngFor="let c of cities | async; index as i;">
+    <label>
+        <input type="checkbox" (change)="onCheckboxChange($event, i)" checked />
+        {{c.city}}
+    </label>
+</div>
+
+<div fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <ng-container *ngFor="let c of selectedCities">
+        <div fxLayout="column" *ngIf="c.display">
+            <div class="city-name">{{c.city}}</div>
+            <app-analog-clock [city]="c"></app-analog-clock>
+            <app-digital-clock [city]="c"></app-digital-clock>
+        </div>
+    </ng-container>
+</div>
